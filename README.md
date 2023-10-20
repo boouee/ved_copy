@@ -35,3 +35,4 @@ https://create.t3.gg/en/usage/next-js
 https://create.t3.gg/en/usage/env-variables
 https://sbcode.net/react-three-fiber/
 https://docs.pmnd.rs/react-three-fiber/tutorials/typescript
+https://refine.dev/blog/zustand-react-state/#what-is-zustand
