@@ -1,0 +1,157 @@
+{
+  "data": [
+    {
+      "name": "Труба канализационная c шумопоглощением",
+      "article": 82017667,
+      "category": "Пластиковый профиль",
+      "size": {
+        "x": 500.0,
+        "y": 50.0,
+        "z": 50.0
+      },
+      "price": 1,
+      "mesh": "Pipe",
+      "texture": "Default",
+      "operation": {
+        "straightCut": true,
+        "obliqueCut": false
+      }
+    },
+    {
+      "name": "Брус нестроганый хвоя",
+      "article": 82017667,
+      "category": "Брус. Доска.",
+      "size": {
+        "x": 3000.0,
+        "y": 100.0,
+        "z": 100.0
+      },
+      "price": 2,
+      "mesh": "Cube",
+      "texture": "Material-50-A_Diffuse",
+      "operation": {
+        "straightCut": true,
+        "obliqueCut": true
+      }
+    },
+    {
+      "name": "Брус клееный",
+      "article": 18362552,
+      "category": "Брус. Доска.",
+      "size": {
+        "x": 3000.0,
+        "y": 90.0,
+        "z": 90.0
+      },
+      "price": 1,
+      "mesh": "Cube",
+      "texture": "Material-50-A_Diffuse",
+      "operation": {
+        "straightCut": true,
+        "obliqueCut": true
+      }
+    },
+    {
+      "name": "Доска нестроганая хвоя",
+      "article": 81947448,
+      "category": "Брус. Доска.",
+      "size": {
+        "x": 3000.0,
+        "y": 150.0,
+        "z": 50.0
+      },
+      "price": 2,
+      "mesh": "Cube",
+      "texture": "Material-50-A_Diffuse",
+      "operation": {
+        "straightCut": true,
+        "obliqueCut": true
+      }
+    },
+    {
+      "name": "Планкен Лиственница прямой с фаской угла",
+      "article": 82270929,
+      "category": "Брус. Доска.",
+      "size": {
+        "x": 2000.0,
+        "y": 140.0,
+        "z": 20.0
+      },
+      "price": 1,
+      "mesh": "Cube",
+      "texture": "Material-50-A_Diffuse",
+      "operation": {
+        "straightCut": true,
+        "obliqueCut": true
+      }
+    },
+    {
+      "name": "Труба полипропиленовая, армированная стекловолокном",
+      "article": 18362552,
+      "category": "Пластиковый профиль",
+      "size": {
+        "x": 2000.0,
+        "y": 25.0,
+        "z": 25.0
+      },
+      "price": 2,
+      "mesh": "Pipe",
+      "texture": "Default",
+      "operation": {
+        "straightCut": true,
+        "obliqueCut": true
+      }
+    },
+    {
+      "name": "Стеновая панель ПВХ Белый матовый",
+      "article": 18362552,
+      "category": "Пластиковые изделия.",
+      "size": {
+        "x": 3000.0,
+        "y": 5.0,
+        "z": 250.0
+      },
+      "price": 2,
+      "mesh": "Cube",
+      "texture": "Default",
+      "operation": {
+        "straightCut": true,
+        "obliqueCut": true
+      }
+    },
+    {
+      "name": "Деталь мебельная ЛДСП цвет дуб",
+      "article": 18362552,
+      "category": "Листовой материал.",
+      "size": {
+        "x": 1200.0,
+        "y": 16.0,
+        "z": 400.0
+      },
+      "price": 2,
+      "mesh": "Cube",
+      "texture": "Original Wood Textures/Wood Texture 01/Wood Texture 01 diffuse",
+      "operation": {
+        "straightCut": true,
+        "obliqueCut": true
+      }
+    },
+    {
+      "name": "Деталь мебельная ЛДСП цвет белый премиум",
+      "article": 18362552,
+      "category": "Листовой материал.",
+      "size": {
+        "x": 600.0,
+        "y": 16.0,
+        "z": 200.0
+      },
+      "price": 2,
+      "mesh": "Cube",
+      "texture": "Original Wood Textures/Wood Texture 01/Wood Texture 01 diffuse",
+      "operation": {
+        "straightCut": true,
+        "obliqueCut": true
+      }
+    }
+  ]
+}
