@@ -33,3 +33,4 @@ https://reactdev.ru/learn/state-a-components-memory/#_2
 https://create.t3.gg/en/folder-structure?packages=
 https://create.t3.gg/en/usage/next-js
 https://create.t3.gg/en/usage/env-variables
+https://sbcode.net/react-three-fiber/
