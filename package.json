@@ -1,0 +1,43 @@
+{
+  "name": "visual_editor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "npx prettier . --write",
+    "lf": "npm run lint && npm run format"
+  },
+  "dependencies": {
+    "@react-three/csg": "^3.0.0",
+    "@react-three/drei": "^9.80.3",
+    "@react-three/fiber": "^8.13.7",
+    "@t3-oss/env-nextjs": "^0.3.1",
+    "leva": "^0.9.35",
+    "next": "^13.4.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "three": "^0.155.0",
+    "three-csg-ts": "^3.1.13",
+    "zod": "^3.21.4",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.37.0",
+    "@types/node": "^18.16.0",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "@typescript-eslint/eslint-plugin": "6.0.0",
+    "@typescript-eslint/parser": "6.0.0",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "^13.4.2",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.0.4"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.18.0"
+  }
+}
