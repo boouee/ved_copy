@@ -69,7 +69,7 @@ export default function useCutPlane() {
       },
     ]);
   };
-  console.log("cut");
+  console.log("useCutPlane()");
   return { cutWithPlane };
 }
 
