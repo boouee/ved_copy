@@ -39,7 +39,7 @@ export default function useCutPlane() {
 
     objectToCut.remove();
     planeToCut.remove();
-
+    console.log("cut");
     if (
       intersectResult.geometry.getAttribute("position").count === 0 ||
       subtractResult.geometry.getAttribute("position").count === 0
