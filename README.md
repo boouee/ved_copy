@@ -28,11 +28,11 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
 
 
-https://www.npmjs.com/package/three-csg-ts
-https://reactdev.ru/learn/state-a-components-memory/#_2
-https://create.t3.gg/en/folder-structure?packages=
-https://create.t3.gg/en/usage/next-js
-https://create.t3.gg/en/usage/env-variables
-https://sbcode.net/react-three-fiber/
-https://docs.pmnd.rs/react-three-fiber/tutorials/typescript
+https://www.npmjs.com/package/three-csg-ts<br>
+https://reactdev.ru/learn/state-a-components-memory/#_2<br>
+https://create.t3.gg/en/folder-structure?packages=<br>
+https://create.t3.gg/en/usage/next-js<br>
+https://create.t3.gg/en/usage/env-variables<br>
+https://sbcode.net/react-three-fiber/<br>
+https://docs.pmnd.rs/react-three-fiber/tutorials/typescript<br>
 https://refine.dev/blog/zustand-react-state/#what-is-zustand
