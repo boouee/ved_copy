@@ -78,7 +78,7 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
           //{...props}
         >
           <planeGeometry args={[5, 5, 5, 5]} />
-          <meshStandardMaterial color={"green"} wireframe />
+          <meshStandardMaterial color={"yellow"} wireframe />
         </mesh>
       </primitive>
       {selectedObjectId === mesh.uuid ? <ObjectControls /> : <></>}
