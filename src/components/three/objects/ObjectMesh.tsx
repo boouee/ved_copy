@@ -69,13 +69,13 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
         {selectedObjectId === mesh.uuid ? <CutPlane /> : <></>}
         <mesh
           position={[
-            (controlValues.planePosition ?? 0) / 100 - Math.abs(box?.min.x ?? 0) - 5,
+            0,
             0,
             0,
           ]}
           rotation={[0, Math.PI / 2, 0]}
-          ref={cutPlaneRef}
-          {...props}
+          //ref={cutPlaneRef}
+          //{...props}
         >
           <planeGeometry args={[5, 5, 5, 5]} />
           <meshStandardMaterial color={"green"} wireframe />
