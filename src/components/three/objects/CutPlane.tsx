@@ -73,7 +73,7 @@ export default function CutPlane({ ...props }: CutPlaneProps) {
     }
   }, [forObject]);
 
-  // console.log("CutPlane rendered");
+  console.log("CutPlane rendered");
 
   return (
     <>
