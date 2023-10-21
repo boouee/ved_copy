@@ -3,6 +3,7 @@ import Head from "next/head";
 import Scene from "~/components/three/Scene";
 
 export default function Home() {
+  console.log("hello");
   return (
     <>
       <Head>
