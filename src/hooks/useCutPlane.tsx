@@ -14,6 +14,7 @@ export default function useCutPlane() {
   const { selectedObjectId, setSelected, objects, setObjects } = useSceneStore(
     (state) => state
   );
+  console.log("useCutPlane()");
 
   const cutWithPlane = (cutPlaneMesh: Mesh | null) => {
     if (selectedObjectId === undefined || selectedObjectId === null) return;
