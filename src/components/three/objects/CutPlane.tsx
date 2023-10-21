@@ -90,6 +90,19 @@ export default function CutPlane({ ...props }: CutPlaneProps) {
         <planeGeometry args={[10, 10, 10, 10]} />
         <meshStandardMaterial color={"green"} wireframe />
       </mesh>
+      <mesh
+        position={[
+          0,
+          0,
+          0,
+        ]}
+        rotation={[0, Math.PI / 2, 0]}
+        ref={cutPlaneRef}
+        {...props}
+      >
+        <planeGeometry args={[10, 10, 10, 10]} />
+        <meshStandardMaterial color={"green"} wireframe />
+      </mesh>
       <CutPlaneRotation />
     </>
   );
