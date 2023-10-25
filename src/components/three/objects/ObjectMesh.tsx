@@ -3,6 +3,8 @@ import { ThreeEvent } from "@react-three/fiber";
 import { useEffect, useRef, useState, useLayoutEffect } from "react";
 import {TextureLoader} from "three";
 import { Mesh } from "three";
+import ReactDOM from "react-dom";
+import { Canvas, extend, useThree, PointerEvent } from "react-three-fiber";
 import CutPlane from "~/components/three/objects/CutPlane";
 import { ObjectJSON } from "~/components/three/gui/ObjectSelector";
 import { ObjectInfo, useSceneStore } from "~/states/SceneState";
