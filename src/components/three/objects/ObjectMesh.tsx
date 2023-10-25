@@ -64,9 +64,9 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
 
     const context = canvas.getContext("2d");
     //context.rect(0, 0, canvas.width, canvas.height);
-    context.font = "30px Arial";
-    context.fillText("Hello World", 10, 50);
-    textureRef.current!.needsUpdate = true;
+    //context.font = "30px Arial";
+    //context.fillText("Hello World", 10, 50);
+    //textureRef.current!.needsUpdate = true;
   }, []);
   // console.log("ObjectWrapper rendered!", meshRef);
 
