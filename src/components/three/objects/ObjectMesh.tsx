@@ -53,8 +53,8 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
   const onPointerOut = () => setIsMeshHovered(false);
 
   const meshRef = useRef<Mesh>(null!);
-  const canvas = document.getElementById("cnvs");
-  const context = canvas.getContext("2d");
+  //const canvas = document.getElementById("cnvs");
+  //const context = canvas.getContext("2d");
   //context.font = "30px Arial";
   //context.fillText("Hello World", 10, 50);
   //const textureRef = useRef<THREE.CanvasTexture>();
