@@ -1,4 +1,4 @@
-import { useCursor } from "@react-three/drei";
+import { useCursor, Billboard } from "@react-three/drei";
 import { ThreeEvent } from "@react-three/fiber";
 import { useEffect, useRef, useState, useLayoutEffect } from "react";
 import {TextureLoader} from "three";
@@ -87,13 +87,14 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
         userData={{ json }}
       >
         {selectedObjectId === mesh.uuid ? <CutPlane /> : <></>}
-        <sprite>
-          <spriteMaterial>
-            <canvasTexture>
-              
-            </canvasTexture>
-          </spriteMaterial>
-        </sprite>
+        <Billboard
+          follow={true}
+          lockX={false}
+          lockY={false}
+          lockZ={false} // Lock the rotation on the z axis (default=false)
+        >
+          <Text fontSize={1}>Billboard</Text>
+        </Billboard>
       </primitive>
       {selectedObjectId === mesh.uuid ? <ObjectControls /> : <></>}
     </>
