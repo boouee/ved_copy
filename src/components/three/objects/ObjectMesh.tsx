@@ -1,7 +1,7 @@
 import { useCursor } from "@react-three/drei";
 import { ThreeEvent } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
-import {three} from "three";
+import {TextureLoader} from "three";
 import { Mesh } from "three";
 import CutPlane from "~/components/three/objects/CutPlane";
 import { ObjectJSON } from "~/components/three/gui/ObjectSelector";
