@@ -1,6 +1,7 @@
 import { ThreeElements } from "@react-three/fiber";
 import { button, folder, useControls } from "leva";
 import useCutPlane from "~/hooks/useCutPlane";
+import { Html, Stats } from "@react-three/drei";
 import { useSceneStore } from "~/states/SceneState";
 import { useCutPlaneStore } from "~/states/CutPlaneState";
 import { useEffect, useRef } from "react";
@@ -91,6 +92,9 @@ export default function CutPlane({ ...props }: CutPlaneProps) {
         <meshStandardMaterial color={"white"} wireframe />
       </mesh>
       <CutPlaneRotation />
+      <Html>
+        <canvas id="cnvs"></canvas>
+      </Html>
     </>
   );
 }
