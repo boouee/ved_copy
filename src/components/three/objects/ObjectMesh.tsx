@@ -53,11 +53,11 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
   const onPointerOut = () => setIsMeshHovered(false);
 
   const meshRef = useRef<Mesh>(null!);
-  const canvasRef = useRef(document.createElement("canvas"));
+  const canvas = document.createElement("canvas");
   const textureRef = useRef<THREE.CanvasTexture>();
 
   useLayoutEffect(() => {
-    const canvas = canvasRef.current;
+    //const canvas = canvasRef.current;
 
     //canvas.width = 10;
     //canvas.height = 10;
@@ -87,7 +87,7 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
         <sprite>
           <spriteMaterial>
             <canvasTexture>
-              <script></script>
+              
             </canvasTexture>
           </spriteMaterial>
         </sprite>
