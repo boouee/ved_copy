@@ -59,8 +59,8 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
   useLayoutEffect(() => {
     const canvas = canvasRef.current;
 
-    canvas.width = 10;
-    canvas.height = 10;
+    //canvas.width = 10;
+    //canvas.height = 10;
 
     const context = canvas.getContext("2d");
     //context.rect(0, 0, canvas.width, canvas.height);
