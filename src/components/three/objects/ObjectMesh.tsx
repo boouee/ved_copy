@@ -64,7 +64,7 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
 
     const context = canvas.getContext("2d");
     //context.rect(0, 0, canvas.width, canvas.height);
-    context.fillStyle = "white";
+    context.font = "30px Arial";
     context.fillText("Hello World", 10, 50);
     textureRef.current!.needsUpdate = true;
   }, []);
