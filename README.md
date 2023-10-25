@@ -36,4 +36,7 @@ https://create.t3.gg/en/usage/env-variables<br>
 https://sbcode.net/react-three-fiber/<br>
 https://docs.pmnd.rs/react-three-fiber/tutorials/typescript<br>
 https://refine.dev/blog/zustand-react-state/#what-is-zustand<br>
-https://drei.pmnd.rs/?path=/docs/abstractions-text--docs
+https://drei.pmnd.rs/?path=/docs/abstractions-text--docs<br>
+https://onion2k.github.io/r3f-by-example/examples/materials/textured-cube-with-shadows/<br>
+https://codesandbox.io/s/react-three-fiber-texture-paint-phkmv?file=/src/index.tsx:66-175<br>
+https://www.npmjs.com/package/@react-three/drei#text
