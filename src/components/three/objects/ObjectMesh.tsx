@@ -68,19 +68,6 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
         userData={{ json }}
       >
         {selectedObjectId === mesh.uuid ? <CutPlane /> : <></>}
-        <mesh
-          position={[
-            0,
-            0,
-            0,
-          ]}
-          rotation={[0, Math.PI / 2, 0]}
-          //ref={cutPlaneRef}
-          //{...props}
-        >
-          <planeGeometry args={[5, 5, 5, 5]} />
-          <meshStandardMaterial color={"yellow"} wireframe />
-        </mesh>
         <sprite>
           <spriteMaterial>
             <texture/>
