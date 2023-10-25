@@ -88,6 +88,7 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
           <spriteMaterial>
             <canvasTexture>
               <script></script>
+            </canvasTexture>
           </spriteMaterial>
         </sprite>
       </primitive>
