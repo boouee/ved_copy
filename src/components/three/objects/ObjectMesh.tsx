@@ -1,6 +1,7 @@
 import { useCursor } from "@react-three/drei";
 import { ThreeEvent } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
+import {three} from "three";
 import { Mesh } from "three";
 import CutPlane from "~/components/three/objects/CutPlane";
 import { ObjectJSON } from "~/components/three/gui/ObjectSelector";
@@ -46,7 +47,7 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
 
     setIsMeshHovered(true);
   };
-
+  const texture = new three.TextureLoader().load( 'sprite.png' );
   const onPointerOut = () => setIsMeshHovered(false);
 
   const meshRef = useRef<Mesh>(null!);
@@ -80,6 +81,11 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
           <planeGeometry args={[5, 5, 5, 5]} />
           <meshStandardMaterial color={"yellow"} wireframe />
         </mesh>
+        <sprite>
+          <spriteMaterial>
+            <texture/>
+          </spriteMaterial>
+        </sprite>
       </primitive>
       {selectedObjectId === mesh.uuid ? <ObjectControls /> : <></>}
     </>
