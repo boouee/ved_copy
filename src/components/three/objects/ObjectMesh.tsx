@@ -86,11 +86,8 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
         {selectedObjectId === mesh.uuid ? <CutPlane /> : <></>}
         <sprite>
           <spriteMaterial>
-            <canvasTexture
-              ref={textureRef}
-              attach="map"
-              image={canvasRef.current}
-            />
+            <canvasTexture>
+              <script></script>
           </spriteMaterial>
         </sprite>
       </primitive>
