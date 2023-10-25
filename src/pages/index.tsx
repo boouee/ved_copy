@@ -15,7 +15,6 @@ export default function Home() {
         <div className={styles.container}>
           <Scene />
         </div>
-        <canvas id="cnvs"></canvas>
       </main>
     </>
   );
