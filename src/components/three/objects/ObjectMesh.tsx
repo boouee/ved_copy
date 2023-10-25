@@ -54,6 +54,9 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
 
   const meshRef = useRef<Mesh>(null!);
   const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d");
+  context.font = "30px Arial";
+  context.fillText("Hello World", 10, 50);
   const textureRef = useRef<THREE.CanvasTexture>();
 
   useLayoutEffect(() => {
@@ -62,9 +65,7 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
     //canvas.width = 10;
     //canvas.height = 10;
 
-    const context = canvas.getContext("2d");
-    context.font = "30px Arial";
-    context.fillText("Hello World", 10, 50);
+
     //context.rect(0, 0, canvas.width, canvas.height);
     //context.font = "30px Arial";
     //context.fillText("Hello World", 10, 50);
