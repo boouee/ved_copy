@@ -12,9 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <canvas id="cnvs"></canvas>
         <div className={styles.container}>
           <Scene />
-          <canvas id="cnvs"></canvas>
+          
         </div>
       </main>
     </>
