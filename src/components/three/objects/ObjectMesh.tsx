@@ -49,7 +49,7 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
 
     setIsMeshHovered(true);
   };
-  const texture = new TextureLoader().load( '~/components/three/objects/sprite.png' );
+  const texture = new TextureLoader().load( 'sprite.png' );
   const onPointerOut = () => setIsMeshHovered(false);
 
   const meshRef = useRef<Mesh>(null!);
