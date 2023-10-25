@@ -1,6 +1,6 @@
 import { useCursor } from "@react-three/drei";
 import { ThreeEvent } from "@react-three/fiber";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useLayoutEffect } from "react";
 import {TextureLoader} from "three";
 import { Mesh } from "three";
 import CutPlane from "~/components/three/objects/CutPlane";
@@ -51,7 +51,22 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
   const onPointerOut = () => setIsMeshHovered(false);
 
   const meshRef = useRef<Mesh>(null!);
+  const canvasRef = useRef(document.createElement("canvas"));
+  const textureRef = useRef<THREE.CanvasTexture>();
 
+  useLayoutEffect(() => {
+    const canvas = canvasRef.current;
+
+    canvas.width = 10;
+    canvas.height = 10;
+
+    const context = canvas.getContext("2d");
+    if (context) {
+      context.rect(0, 0, canvas.width, canvas.height);
+      context.fillStyle = "white";
+      context.fillText("Hello World", 10, 50);
+    }
+  }, []);
   // console.log("ObjectWrapper rendered!", meshRef);
 
   if (!mesh) return <></>;
