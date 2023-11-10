@@ -12,7 +12,7 @@ export default function useTextureSetup({ mesh, json }: ObjectInfo) {
     if (json.texture === "Default") return;
 
     const texture = await textureLoader.loadAsync(
-      `textures/${json.texture}.jpg`
+      `textures/albedo.jpg`
     );
 
     if (!texture) return;
