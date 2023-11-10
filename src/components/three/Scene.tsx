@@ -7,7 +7,8 @@ import { DoubleSide } from "three";
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 
 import SceneObjects from "~/components/three/SceneObjects";
-const colorMap =  await TextureLoader.loadAsync('textures/albedo.jpg');
+const textureLoader = new TextureLoader();
+const colorMap =  await textureLoader.loadAsync('textures/albedo.jpg');
 export default function Scene() {
   
   return (
