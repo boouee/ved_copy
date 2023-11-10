@@ -87,14 +87,7 @@ export function ObjectMesh({ mesh, json }: ObjectInfo) {
         userData={{ json }}
       >
         {selectedObjectId === mesh.uuid ? <CutPlane /> : <></>}
-        <Billboard
-          follow={true}
-          lockX={false}
-          lockY={false}
-          lockZ={false} // Lock the rotation on the z axis (default=false)
-        >
-          <Text fontSize={1}>Billboard</Text>
-        </Billboard>
+
       </primitive>
       {selectedObjectId === mesh.uuid ? <ObjectControls /> : <></>}
     </>
