@@ -12,9 +12,9 @@ export default function Scene() {
       <InitialProps />
       <ambientLight intensity={0.1} />
       <directionalLight color="red" position={[0, 0, 5]} />
-      <mesh>
-        <boxGeometry />
-        <meshStandardMaterial />
+      <mesh position ={[0,0,0]}>
+          <planeBufferGeometry attach="geometry" args={[25, 15]} />
+          <meshPhongMaterial attach="material" color="green" />
       </mesh>
     </Canvas>
   );
