@@ -9,6 +9,7 @@ import SceneObjects from "~/components/three/SceneObjects";
 export default function Scene() {
   return (
     <Canvas camera={{ fov: 75, near: 0.1, far: 3000, position: [15, 15, 15] }}>
+      <InitialProps />
       <ambientLight intensity={0.1} />
       <directionalLight color="red" position={[0, 0, 5]} />
       <mesh>
