@@ -7,9 +7,9 @@ import { DoubleSide } from "three";
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 
 import SceneObjects from "~/components/three/SceneObjects";
-
+const colorMap =  await textureLoader.loadAsync('textures/albedo.jpg');
 export default function Scene() {
-  const colorMap =  await textureLoader.loadAsync('textures/albedo.jpg')
+  
   return (
     <Canvas camera={{ fov: 75, near: 0.1, far: 3000, position: [15, 15, 15] }}>
       <InitialProps />
