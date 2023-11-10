@@ -14,7 +14,7 @@ export default function Scene() {
       <ambientLight intensity={1} />
       <mesh position ={[0,0,0]}>
           <planeGeometry attach="geometry" args={[25, 15]} />
-          <meshPhongMaterial attach="material" color="green" side={DoubleSide}/>
+          <meshBasicMaterial attach="material" color="green" side={DoubleSide}/>
       </mesh>
     </Canvas>
   );
