@@ -1,19 +1,22 @@
-import { createRoot } from 'react-dom/client'
-import { Canvas } from '@react-three/fiber'
+import styles from "./index.module.css";
+import Head from "next/head";
+import Scene from "~/components/three/Scene";
 
-function App() {
+export default function Home() {
+  console.log("hello");
   return (
-    <div id="canvas-container">
-      <Canvas>
-        <ambientLight intensity={0.1} />
-        <directionalLight color="red" position={[0, 0, 5]} />
-        <mesh>
-          <boxGeometry />
-          <meshStandardMaterial />
-        </mesh>
-      </Canvas>
-    </div>
-  )
+    <>
+      <Head>
+        <title>visual_editor</title>
+        <meta name="description" content="visual_editor" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main className={styles.main}>
+        <div className={styles.container}>
+          <Scene />
+          
+        </div>
+      </main>
+    </>
+  );
 }
-
-createRoot(document.getElementById('root')).render(<App />)
