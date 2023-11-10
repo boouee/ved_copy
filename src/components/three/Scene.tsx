@@ -11,7 +11,7 @@ export default function Scene() {
   return (
     <Canvas camera={{ fov: 75, near: 0.1, far: 3000, position: [15, 15, 15] }}>
       <InitialProps />
-      <ambientLight intensity={0.1} />
+      <ambientLight intensity={1} />
       <mesh position ={[0,0,0]}>
           <planeGeometry attach="geometry" args={[25, 15]} />
           <meshPhongMaterial attach="material" color="green" side={DoubleSide}/>
