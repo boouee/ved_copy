@@ -16,7 +16,7 @@ export default function Scene() {
       <ambientLight intensity={1} />
       <mesh position ={[0,0,0]} rotation = {[0, Math.PI/2,0]}>
           <planeGeometry attach="geometry" args={[25, 7]} />
-          <meshBasicMaterial attach="material"  map={map} color="green" side={DoubleSide}/>
+          <meshBasicMaterial attach="material" color="green" side={DoubleSide}/>
       </mesh>
       <mesh position ={[0,0,0]}>
           <planeGeometry attach="geometry" args={[25, 7]} />
