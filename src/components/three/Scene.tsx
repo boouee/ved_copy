@@ -5,12 +5,17 @@ import ObjectSelector from "~/components/three/gui/ObjectSelector";
 import Utils from "~/components/three/gui/Utils";
 import { DoubleSide } from "three";
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
-
+import useTextureSetup from "~/hooks/useTextureSetup";
 import SceneObjects from "~/components/three/SceneObjects";
 const textureLoader = new TextureLoader();
 const colorMap =  await textureLoader.loadAsync('~/textures/albedo.jpg');
 export default function Scene() {
-  
+  const { setupTexture } = useTextureSetup({ mesh, json });
+
+
+  useEffect(() => {
+    void setupTexture();
+  });  
   return (
     <Canvas camera={{ fov: 75, near: 0.1, far: 3000, position: [15, 15, 15] }}>
       <InitialProps />
